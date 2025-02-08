@@ -1,4 +1,6 @@
-﻿namespace DAM_Leccion_1
+﻿using DAM_Leccion_1.View;
+
+namespace DAM_Leccion_1
 {
     public partial class App : Application
     {
@@ -6,6 +8,7 @@
         {
             InitializeComponent();
             MainPage = new SplashPage();
+            MainPage = new Modos();
         }
     }
 }

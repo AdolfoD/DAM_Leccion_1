@@ -29,7 +29,7 @@ namespace DAM_Leccion_1
             {
                 Nombre = "Hola Bebé",
             };
-            BindingContext = personaModel.Nombre;
+            BindingContext = personaModel;
             //txtNombre3.Text = personaModel.Nombre;
 
             // Binding personaBinding = new Binding();
