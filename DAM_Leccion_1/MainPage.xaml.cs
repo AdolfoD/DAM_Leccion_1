@@ -5,6 +5,7 @@ namespace DAM_Leccion_1
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        private object personaModel;
 
         public MainPage()
         {
@@ -25,11 +26,14 @@ namespace DAM_Leccion_1
         }
         public void Ejecutar()
         {
-            PersonaModel personaModel = new PersonaModel()
+            personaModel = new PersonaModel()
             {
                 Nombre = "Hola Bebé",
             };
             BindingContext = personaModel;
+
+
+
             //txtNombre3.Text = personaModel.Nombre;
 
             // Binding personaBinding = new Binding();
@@ -39,7 +43,8 @@ namespace DAM_Leccion_1
         }
         private void btnAceptar_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Asistente del sistema", "Se ah guardado el registro en DB", "Aceptar");
+            //DisplayAlert("Asistente del sistema", "Se ah guardado el registro en DB", "Aceptar");
+            personaModel = "ADOLFODESIXTOQUITNOS";
         }
     }
 

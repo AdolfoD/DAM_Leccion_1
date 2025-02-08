@@ -7,8 +7,8 @@ namespace DAM_Leccion_1
         public App()
         {
             InitializeComponent();
-            MainPage = new SplashPage();
-            MainPage = new Modos();
+            MainPage = new AppShell();
+            
         }
     }
 }
